@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 
-class PartyCreate(BaseModel):
+class PartyCreateSchema(BaseModel):
     first_name: str
     last_name: str
     age: int
@@ -10,7 +10,7 @@ class PartyCreate(BaseModel):
         orm_mode = True
 
 
-class PartyOut(BaseModel):
+class PartyOutSchema(BaseModel):
     first_name: str
     last_name: str
     age: int
@@ -19,7 +19,7 @@ class PartyOut(BaseModel):
         orm_mode = True
 
 
-class PartyUpdate(BaseModel):
+class PartyUpdateSchema(BaseModel):
     first_name: str
     last_name: str
     age: int
