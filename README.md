@@ -32,5 +32,5 @@ uvicorn app.main:app --host 0.0.0.0 --port 9000 --reload
 
 
 NOTE:
-DATABASE_URL = postgresql+psycopg2://pmpsdbuser:pmpsdbpass@pmps_backend_db:5432/pmps_db
-DATABASE_URL = postgresql+psycopg2://prismerp:prismerp@localhost:5432/pmps_db
+[for docker] DATABASE_URL = postgresql+psycopg2://pmpsdbuser:pmpsdbpass@pmps_backend_db:5432/pmps_db
+[for any other db server] DATABASE_URL = postgresql+psycopg2://prismerp:prismerp@localhost:5432/pmps_db
