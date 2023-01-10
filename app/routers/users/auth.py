@@ -3,9 +3,8 @@ from sqlalchemy.orm import Session
 from fastapi.security import HTTPBearer
 
 # from app.models.user.user_menu import UserMenu
-from app.root import oauth2
 from app.root import configs, database
-from app.service import utils
+from app.service import utils, oauth2
 from app.schema.users.access_tokens import AccessTokenCreateSchema, AccessTokenOutSchema, Token
 from app.models.user.users_model import User
 from app.schema.users.users import UserLoginSchema

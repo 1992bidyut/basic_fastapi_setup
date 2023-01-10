@@ -3,7 +3,7 @@ from fastapi import Depends, APIRouter
 from sqlalchemy.orm import Session
 from app.root.database import get_db
 from app.models.user.users_model import User
-from app.root import oauth2
+from app.service import oauth2
 
 from app.models.parties.parties_models import Parties
 from app.schema.parties.parties import PartyOutSchema, PartyCreateSchema

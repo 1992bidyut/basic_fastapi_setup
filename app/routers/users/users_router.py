@@ -1,7 +1,5 @@
-from datetime import datetime, timedelta
 from fastapi import Depends, HTTPException, status, APIRouter, Header
-from fastapi.security import  OAuth2PasswordRequestForm
-from app.root import oauth2
+from app.service import oauth2
 from app.root.database import get_db
 from sqlalchemy.orm import Session
 from app.service.enums import E_UserType
